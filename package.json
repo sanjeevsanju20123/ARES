@@ -1,0 +1,37 @@
+{
+  "name": "ares",
+  "version": "0.1.0",
+  "description": "ARES - Standalone Personal AI Assistant",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd src && vite",
+    "dev:backend": "tsx --watch server/src/index.ts",
+    "build": "cd src && vite build && tsc --noEmit",
+    "preview": "cd src && vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "tsx": "^4.0.0",
+    "concurrently": "^8.2.1",
+    "@types/node": "^20.5.0",
+    "@types/express": "^4.17.18",
+    "@types/cors": "^2.8.14",
+    "vite": "^4.4.9",
+    "@vitejs/plugin-react": "^4.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.0",
+    "tailwindcss": "^3.3.3",
+    "postcss": "^8.4.29",
+    "autoprefixer": "^10.4.15",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7"
+  }
+}
